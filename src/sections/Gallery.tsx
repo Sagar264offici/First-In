@@ -23,29 +23,30 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     src: '/images/04-real-lab-portrait-4x5.png',
-    alt: 'Students practicing on computers in the Vikas IT Institute lab',
+    alt: 'Smart classroom with programming languages wall at Vikas IT Institute',
     span: 'col-span-1 row-span-2',
     position: 'object-center',
   },
   {
     src: '/images/11-generated-programming-web.png',
-    alt: 'Programming and web development practice',
+    alt: 'Technologies taught at the institute: C, Python, Java, JavaScript and more',
     span: 'col-span-2 row-span-1',
   },
   {
     src: '/images/06-course-packages-reference.png',
-    alt: 'Course packages offered by the institute',
+    alt: 'Vikas IT Institute course packages chart with durations and monthly fees',
     span: 'col-span-1 row-span-2',
   },
   {
     src: '/images/12-generated-student-gallery-strip.png',
-    alt: 'Students working on projects together',
+    alt: 'Students practicing on computers with trainer guidance',
     span: 'col-span-2 row-span-1',
   },
   {
     src: '/images/07-learning-path-reference.png',
-    alt: 'Structured learning paths from beginner to advanced',
-    span: 'col-span-2 row-span-1',
+    alt: 'Education-wise courses fee chart and premium diploma package details',
+    span: 'col-span-1 row-span-2',
+    position: 'object-top',
   },
   {
     src: '/images/08-admission-2026-poster.png',

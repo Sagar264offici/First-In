@@ -199,14 +199,14 @@ export const translations: Record<'en' | 'hi', TranslationKeys> = {
     },
     gallery: {
       title: 'Inside Vikas IT Institute',
-      subtitle: 'Real photos of our learning environment',
+      subtitle: 'Photos, course packages & fee charts of our institute',
       captions: [
-        'Computer lab & course offerings',
-        'Trainer guidance & mentoring',
-        'Hands-on practice sessions',
-        'Digital skills in progress',
-        'Programming & code practice',
-        'Design & web creativity',
+        'Smart classroom & programming wall',
+        'Technologies you will touch',
+        'Course packages & monthly fees',
+        'Hands-on lab practice',
+        'Education-wise courses & fees',
+        'Admissions open — 2026 batch',
       ],
     },
     faq: {
@@ -521,14 +521,14 @@ export const translations: Record<'en' | 'hi', TranslationKeys> = {
     },
     gallery: {
       title: 'विकास आईटी संस्थान के अंदर',
-      subtitle: 'हमारे शिक्षण वातावरण की वास्तविक तस्वीरें',
+      subtitle: 'हमारे संस्थान की तस्वीरें, कोर्स पैकेज और फीस चार्ट',
       captions: [
-        'कंप्यूटर लैब और पाठ्यक्रम पेशकश',
-        'प्रशिक्षक मार्गदर्शन और मेंटरिंग',
-        'व्यावहारिक अभ्यास सत्र',
-        'प्रगति में डिजिटल कौशल',
-        'प्रोग्रामिंग और कोड अभ्यास',
-        'डिजाइन और वेब रचनात्मकता',
+        'स्मार्ट क्लासरूम और प्रोग्रामिंग वॉल',
+        'वे तकनीकें जो आप सीखेंगे',
+        'कोर्स पैकेज और मासिक फीस',
+        'लैब में व्यावहारिक अभ्यास',
+        'शिक्षा-वार पाठ्यक्रम और फीस',
+        'प्रवेश खुले हैं — 2026 बैच',
       ],
     },
     faq: {
