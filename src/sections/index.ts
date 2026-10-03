@@ -1,0 +1,14 @@
+export { Hero } from './Hero';
+export { About } from './About';
+export { LearningPaths } from './LearningPaths';
+export { Courses } from './Courses';
+export { Packages } from './Packages';
+export { PracticalTraining } from './PracticalTraining';
+export { AI } from './AI';
+export { Programming } from './Programming';
+export { WhyUs } from './WhyUs';
+export { Recognition } from './Recognition';
+export { Gallery } from './Gallery';
+export { FAQ } from './FAQ';
+export { Admission } from './Admission';
+export { Contact } from './Contact';
