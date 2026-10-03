@@ -20,9 +20,9 @@ export function Hero() {
     <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden" aria-labelledby="hero-heading">
       {/* Background decorative elements - subtle, GPU-friendly */}
       <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl animate-float-slow" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-primary-blue/5 rounded-full blur-3xl animate-float" />
-        <div className="absolute top-1/3 left-0 w-[260px] h-[260px] bg-accent-yellow/5 rounded-full blur-3xl animate-float-slow" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[320px] h-[320px] sm:w-[600px] sm:h-[600px] bg-primary/5 rounded-full blur-3xl animate-float-slow" />
+        <div className="absolute bottom-0 right-0 w-[220px] h-[220px] sm:w-[400px] sm:h-[400px] bg-primary-blue/5 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-1/3 left-0 w-[160px] h-[160px] sm:w-[260px] sm:h-[260px] bg-accent-yellow/5 rounded-full blur-3xl animate-float-slow" />
       </div>
 
       <Container size="xl">
@@ -32,7 +32,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
-            className="space-y-6"
+            className="space-y-6 min-w-0"
           >
             {/* Tagline */}
             <motion.span
@@ -55,8 +55,8 @@ export function Hero() {
               <h1
                 id="hero-heading"
                 className={cn(
-                  'font-bold tracking-tight leading-[1.1]',
-                  language === 'hi' ? 'text-display-lg' : 'text-display-xl'
+                  'font-bold tracking-tight leading-[1.1] text-balance',
+                  language === 'hi' ? 'text-[1.875rem] sm:text-display-md' : 'text-[2.25rem] sm:text-display-xl'
                 )}
               >
                 {t('hero.headline1')}
@@ -107,7 +107,7 @@ export function Hero() {
                 >
                   <span className={cn(
                     'font-extrabold tracking-tight',
-                    language === 'hi' ? 'text-3xl sm:text-4xl' : 'text-4xl sm:text-5xl'
+                    language === 'hi' ? 'text-2xl sm:text-4xl' : 'text-3xl sm:text-5xl'
                   )}>
                     {stat.value}
                   </span>
@@ -153,14 +153,14 @@ export function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.19, 1, 0.22, 1] }}
-            className="relative"
+            className="relative min-w-0"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.15, ease: [0.19, 1, 0.22, 1] }}
               whileHover={{ y: -6 }}
-              className="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-elevated bg-bg-muted group"
+              className="relative aspect-[4/3] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-elevated bg-bg-muted group"
             >
               <img
                 src="/images/02-real-lab-hero-16x9.png"

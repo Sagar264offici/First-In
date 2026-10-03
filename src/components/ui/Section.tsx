@@ -29,9 +29,9 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
     };
 
     const sizeStyles = {
-      sm: 'py-14 sm:py-20',
-      md: 'py-20 sm:py-28',
-      lg: 'py-24 sm:py-32 lg:py-36',
+      sm: 'py-12 sm:py-20',
+      md: 'py-14 sm:py-28',
+      lg: 'py-16 sm:py-32 lg:py-36',
     };
 
     return (

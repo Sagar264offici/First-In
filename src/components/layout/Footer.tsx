@@ -28,7 +28,7 @@ export function Footer() {
                 className="flex items-center justify-center w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
                 aria-label="Instagram"
               >
-                <Instagram className="w-4.5 h-4.5" aria-hidden="true" />
+                <Instagram className="w-[18px] h-[18px]" aria-hidden="true" />
               </a>
               <a
                 href={socialLinks.facebook}
@@ -37,7 +37,7 @@ export function Footer() {
                 className="flex items-center justify-center w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
                 aria-label="Facebook"
               >
-                <Facebook className="w-4.5 h-4.5" aria-hidden="true" />
+                <Facebook className="w-[18px] h-[18px]" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -98,10 +98,10 @@ export function Footer() {
               </a>
               <a
                 href={`mailto:${contactInfo.email}`}
-                className="flex items-center gap-3 text-white/70 hover:text-accent-yellow transition-colors"
+                className="flex items-center gap-3 text-white/70 hover:text-accent-yellow transition-colors min-w-0"
               >
                 <Mail className="w-5 h-5 text-accent-yellow flex-shrink-0" aria-hidden="true" />
-                <span className="text-body">{contactInfo.email}</span>
+                <span className="text-body break-all">{contactInfo.email}</span>
               </a>
             </address>
 
@@ -138,7 +138,7 @@ export function Footer() {
               className="flex items-center justify-center w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
               aria-label="Back to top"
             >
-              <ArrowUp className="w-4.5 h-4.5 text-white/70" aria-hidden="true" />
+                <ArrowUp className="w-[18px] h-[18px] text-white/70" aria-hidden="true" />
             </a>
           </div>
         </div>

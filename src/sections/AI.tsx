@@ -92,7 +92,7 @@ export function AI() {
             transition={{ duration: 0.6, delay: 0.15, ease: [0.19, 1, 0.22, 1] }}
             className="relative"
           >
-            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-elevated bg-bg-muted">
+            <div className="relative aspect-[4/3] sm:aspect-square rounded-2xl overflow-hidden shadow-elevated bg-bg-muted max-h-[320px] sm:max-h-none w-full">
               <img
                 src="/images/10-generated-ai-learning.png"
                 alt="AI learning concepts and tools visualization"

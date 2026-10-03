@@ -162,14 +162,14 @@ export function Contact() {
               </a>
             </div>
 
-            {/* Info Cards */}
-            <div className="grid grid-cols-2 gap-3" role="list" aria-label="Institute information">
+            {/* Info Cards — stack on 9:16 phones, 2-col from 400px up */}
+            <div className="grid grid-cols-1 min-[400px]:grid-cols-2 gap-3" role="list" aria-label="Institute information">
               <motion.article
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.2, ease: [0.19, 1, 0.22, 1] }}
-                className="card p-4 text-center"
+                className="card p-4 text-center h-full min-w-0"
                 role="listitem"
               >
                 <div className="w-10 h-10 mx-auto mb-2 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -185,7 +185,7 @@ export function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.25, ease: [0.19, 1, 0.22, 1] }}
-                className="card p-4 text-center"
+                className="card p-4 text-center h-full min-w-0"
                 role="listitem"
               >
                 <div className="w-10 h-10 mx-auto mb-2 rounded-xl bg-accent-yellow/20 flex items-center justify-center">

@@ -62,7 +62,7 @@ export function Packages() {
                 <Card variant="elevated" hover padding="lg" className="h-full flex flex-col relative overflow-hidden">
                   {/* Popular Badge */}
                   {pkg.popular && (
-                    <div className="absolute -top-2 -right-2">
+                    <div className="absolute top-3 right-3">
                       <Badge variant="accent" size="sm" className="whitespace-nowrap">
                         Popular
                       </Badge>

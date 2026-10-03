@@ -73,7 +73,7 @@ export function PracticalTraining() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.19, 1, 0.22, 1] }}
-            className="relative"
+            className="relative min-w-0 pb-14 lg:pb-0"
           >
             <div className="relative aspect-[3/2] rounded-2xl overflow-hidden shadow-elevated">
               <img
@@ -86,12 +86,12 @@ export function PracticalTraining() {
             </div>
 
             {/* Floating stat cards */}
-            <div className="absolute -bottom-4 -left-4 lg:-left-6 grid grid-cols-2 gap-3">
-              <Card variant="elevated" padding="md" className="text-center">
+            <div className="absolute -bottom-4 left-4 right-4 sm:left-0 sm:right-auto sm:-translate-x-4 lg:-left-6 lg:translate-x-0 grid grid-cols-2 gap-3">
+              <Card variant="elevated" padding="sm" className="text-center">
                 <p className={cn('font-extrabold text-accent-yellow', language === 'hi' ? 'text-2xl' : 'text-3xl')}>100%</p>
                 <p className="text-body-sm text-text-muted mt-0.5">Practical Focus</p>
               </Card>
-              <Card variant="elevated" padding="md" className="text-center">
+              <Card variant="elevated" padding="sm" className="text-center">
                 <p className={cn('font-extrabold text-primary-blue', language === 'hi' ? 'text-2xl' : 'text-3xl')}>Daily</p>
                 <p className="text-body-sm text-text-muted mt-0.5">Lab Sessions</p>
               </Card>

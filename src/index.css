@@ -21,6 +21,7 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: clip;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -43,6 +44,13 @@
     color: var(--color-text);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+    max-width: 100%;
+  }
+
+  #root {
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   html[lang="hi"] body {
@@ -64,6 +72,16 @@
     height: auto;
     display: block;
   }
+
+  img[class*='h-full'],
+  img[class*='object-cover'],
+  img[class*='object-contain'] {
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
 }
 
 @layer components {
@@ -81,7 +99,7 @@
   }
 
   .section {
-    padding: 5rem 0;
+    padding: 3.5rem 0;
   }
 
   @media (min-width: 768px) {
@@ -108,7 +126,14 @@
   }
 
   .btn {
-    @apply relative inline-flex items-center justify-center gap-2 font-semibold rounded-xl whitespace-nowrap select-none transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed ease-out-expo;
+    @apply relative inline-flex items-center justify-center gap-2 font-semibold rounded-xl text-center leading-snug select-none transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed ease-out-expo;
+    text-wrap: balance;
+  }
+
+  @media (min-width: 640px) {
+    .btn {
+      white-space: nowrap;
+    }
   }
 
   .btn-primary {

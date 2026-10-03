@@ -17,6 +17,21 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Lock body scroll + auto-close the mobile menu on larger screens
+  useEffect(() => {
+    if (!isOpen) return;
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const handleResize = () => {
+      if (window.innerWidth >= 768) setIsOpen(false);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      document.body.style.overflow = originalOverflow;
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isOpen]);
+
   const navLinks = [
     { href: '#home', label: t('nav.home') },
     { href: '#courses', label: t('nav.courses') },
@@ -171,7 +186,7 @@ export function Navbar() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="md:hidden overflow-hidden bg-white border-t border-primary/5"
+              className="md:hidden overflow-y-auto overflow-x-hidden overscroll-contain bg-white border-t border-primary/5 max-h-[calc(100dvh-4rem)]"
               role="navigation"
               aria-label="Mobile menu"
             >

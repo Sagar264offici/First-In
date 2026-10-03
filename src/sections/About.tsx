@@ -79,7 +79,7 @@ export function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.6, delay: 0.15, ease: [0.19, 1, 0.22, 1] }}
-          className="relative"
+          className="relative min-w-0 mb-10 lg:mb-0"
         >
           <div className="relative aspect-[3/2] rounded-2xl overflow-hidden shadow-elevated">
             <img
@@ -110,7 +110,7 @@ export function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.4, ease: [0.34, 1.56, 0.64, 1] }}
-            className="absolute -bottom-5 -left-5 lg:-left-6 bg-white rounded-2xl shadow-elevated p-5 border border-primary/4"
+            className="absolute -bottom-5 left-4 sm:-left-5 lg:-left-6 bg-white rounded-2xl shadow-elevated p-5 border border-primary/4"
           >
             <div className="text-center">
               <p className={cn('font-extrabold text-accent-yellow', language === 'hi' ? 'text-3xl' : 'text-4xl')}>100%</p>

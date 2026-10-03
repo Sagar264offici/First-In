@@ -132,9 +132,9 @@ export function Gallery() {
             </h2>
           </motion.div>
 
-          {/* Bento grid */}
+          {/* Bento grid — portrait (9:16-ish) cells on 9:16 phones, 4-col on desktop */}
           <div
-            className="grid grid-cols-2 lg:grid-cols-4 grid-flow-dense auto-rows-[9rem] sm:auto-rows-[11rem] lg:auto-rows-[13rem] gap-3 sm:gap-4"
+            className="grid grid-cols-2 lg:grid-cols-4 grid-flow-dense auto-rows-[8rem] min-[420px]:auto-rows-[9rem] sm:auto-rows-[11rem] lg:auto-rows-[13rem] gap-3 sm:gap-4"
             role="list"
             aria-label="Institute gallery"
           >
@@ -248,11 +248,11 @@ export function Gallery() {
                 <X className="w-5 h-5 text-white" aria-hidden="true" />
               </button>
 
-              {/* Prev / Next */}
+              {/* Prev / Next — 44px touch targets */}
               <button
                 type="button"
                 onClick={prevImage}
-                className="absolute left-1 sm:-left-14 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-yellow"
+                className="absolute left-1 sm:-left-14 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-yellow"
                 aria-label="Previous image"
               >
                 <ChevronLeft className="w-5 h-5 text-white" aria-hidden="true" />
@@ -260,7 +260,7 @@ export function Gallery() {
               <button
                 type="button"
                 onClick={nextImage}
-                className="absolute right-1 sm:-right-14 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-yellow"
+                className="absolute right-1 sm:-right-14 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-yellow"
                 aria-label="Next image"
               >
                 <ChevronRight className="w-5 h-5 text-white" aria-hidden="true" />
