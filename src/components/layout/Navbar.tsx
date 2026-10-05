@@ -23,7 +23,7 @@ export function Navbar() {
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     const handleResize = () => {
-      if (window.innerWidth >= 768) setIsOpen(false);
+      if (window.innerWidth >= 1280) setIsOpen(false);
     };
     window.addEventListener('resize', handleResize);
     return () => {
@@ -35,6 +35,7 @@ export function Navbar() {
   const navLinks = [
     { href: '#home', label: t('nav.home') },
     { href: '#courses', label: t('nav.courses') },
+    { href: '#web-development', label: t('nav.website') },
     { href: '#about', label: t('nav.about') },
     { href: '#gallery', label: t('nav.gallery') },
     { href: '#faq', label: t('nav.faq') },
@@ -73,8 +74,8 @@ export function Navbar() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            <ul className="flex items-center gap-1" role="menubar">
+          <div className="hidden xl:flex items-center gap-4 2xl:gap-6">
+            <ul className="flex items-center gap-0.5 2xl:gap-1" role="menubar">
               {navLinks.map((link) => (
                 <li key={link.href} role="none">
                   <a
@@ -147,7 +148,7 @@ export function Navbar() {
             <div className="flex items-center gap-3 ml-4">
               <a
                 href={contactInfo.phoneHref}
-                className="hidden sm:flex items-center gap-2 px-4 py-2 text-body-sm font-semibold text-primary hover:text-primary-blue transition-colors"
+                className="hidden 2xl:flex items-center gap-2 px-4 py-2 text-body-sm font-semibold text-primary hover:text-primary-blue transition-colors"
                 aria-label={t('common.callNow')}
               >
                 <Phone className="w-4 h-4" aria-hidden="true" />
@@ -168,7 +169,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden flex items-center justify-center p-2 rounded-lg text-text hover:bg-primary/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2"
+            className="xl:hidden flex items-center justify-center p-2 rounded-lg text-text hover:bg-primary/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2"
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
@@ -186,7 +187,7 @@ export function Navbar() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="md:hidden overflow-y-auto overflow-x-hidden overscroll-contain bg-white border-t border-primary/5 max-h-[calc(100dvh-4rem)]"
+              className="xl:hidden overflow-y-auto overflow-x-hidden overscroll-contain bg-white border-t border-primary/5 max-h-[calc(100dvh-4rem)]"
               role="navigation"
               aria-label="Mobile menu"
             >

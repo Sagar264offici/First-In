@@ -6,6 +6,7 @@ export interface TranslationKeys {
     home: string;
     courses: string;
     about: string;
+    website: string;
     gallery: string;
     faq: string;
     contact: string;
@@ -64,7 +65,135 @@ export interface TranslationKeys {
     tallyGst: { title: string; duration: string; fee: string; topics: string[] };
     adca: { title: string; duration: string; fee: string; topics: string[] };
     tallyBasic: { title: string; duration: string; fee: string; topics: string[] };
-    monthly: string;
+monthly: string;
+    };
+  // Website Development Packages
+  webPackages: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    badges: string[];
+    rangeLabel: string;
+    ctaQuote: string;
+    ctaCompare: string;
+    ctaDownload: string;
+    ctaCall: string;
+    ctaWhatsapp: string;
+oneTime: string;
+      popular: string;
+      whatsappMessage: string;
+      whatsappGeneral: string;
+    overview: {
+      eyebrow: string;
+      title: string;
+      description: string;
+    };
+    items: {
+      starter: { name: string; tagline: string; features: string[] };
+      business: { name: string; tagline: string; features: string[] };
+      professional: { name: string; tagline: string; features: string[] };
+      businessPro: { name: string; tagline: string; features: string[] };
+      customPlatform: { name: string; tagline: string; features: string[] };
+    };
+    comparison: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      legendIncluded: string;
+      legendNotIncluded: string;
+      legendExact: string;
+      featureColumn: string;
+      rows: {
+        pages: string;
+        responsive: string;
+        uiux: string;
+        gallery: string;
+        faq: string;
+        forms: string;
+        whatsapp: string;
+        googleMaps: string;
+        coursePages: string;
+        seo: string;
+        analytics: string;
+        cms: string;
+        blog: string;
+        adminPanel: string;
+        database: string;
+        api: string;
+        payments: string;
+        deployment: string;
+      };
+      value: {
+        pages4: string;
+        pages6: string;
+        pages10: string;
+        pages15: string;
+        custom: string;
+        professional: string;
+        basicEnquiry: string;
+        advancedEnquiry: string;
+        advancedContact: string;
+        customWorkflows: string;
+        basicSeo: string;
+        basicSearchConsole: string;
+        advancedSeo: string;
+        schemaSeo: string;
+        googleAnalytics: string;
+        professionalSetup: string;
+        customDashboard: string;
+        whenRequired: string;
+      };
+    };
+    infrastructure: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      noteTitle: string;
+      note: string;
+      items: {
+        domain: { title: string; description: string; bullets: string[] };
+        hosting: { title: string; description: string; bullets: string[] };
+        ssl: { title: string; description: string; bullets: string[] };
+        dns: { title: string; description: string; bullets: string[] };
+        deployment: { title: string; description: string; bullets: string[] };
+        performance: { title: string; description: string; bullets: string[] };
+        seo: { title: string; description: string; bullets: string[] };
+      };
+    };
+    included: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      groups: Array<{ title: string; items: string[] }>;
+    };
+    process: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      items: Array<{ title: string; description: string }>;
+    };
+    delivery: {
+      title: string;
+      subtitle: string;
+      note: string;
+      items: Array<{ title: string; description: string }>;
+    };
+    notes: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      items: string[];
+    };
+    unsure: {
+      title: string;
+      description: string;
+    };
+    nextStep: {
+      eyebrow: string;
+      title: string;
+      description: string;
+      pdfLabel: string;
+    };
   };
   // Practical Training
   practical: {

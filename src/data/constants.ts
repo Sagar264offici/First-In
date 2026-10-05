@@ -73,6 +73,7 @@ export const footerLinks = {
   quickLinks: [
     { labelKey: 'nav.home', href: '#home' },
     { labelKey: 'nav.courses', href: '#courses' },
+    { labelKey: 'nav.website', href: '#web-development' },
     { labelKey: 'nav.about', href: '#about' },
     { labelKey: 'nav.gallery', href: '#gallery' },
     { labelKey: 'nav.faq', href: '#faq' },
@@ -81,6 +82,7 @@ export const footerLinks = {
   popularCourses: [
     { label: 'Basic Computer Course', href: '#courses' },
     { label: 'Web Designing', href: '#courses' },
+    { label: 'Website Development', href: '#web-development' },
     { label: 'Tally Prime with GST', href: '#courses' },
     { label: 'Data Entry Operator', href: '#courses' },
     { label: 'Graphic Designing', href: '#courses' },

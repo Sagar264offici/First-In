@@ -6,6 +6,7 @@ import {
   LearningPaths,
   Courses,
   Packages,
+  WebDevelopment,
   PracticalTraining,
   AI,
   Programming,
@@ -41,6 +42,7 @@ function AppContent() {
             <LearningPaths />
             <Courses />
             <Packages />
+            <WebDevelopment />
             <PracticalTraining />
             <AI />
             <Programming />

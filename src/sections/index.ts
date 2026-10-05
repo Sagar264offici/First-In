@@ -3,6 +3,7 @@ export { About } from './About';
 export { LearningPaths } from './LearningPaths';
 export { Courses } from './Courses';
 export { Packages } from './Packages';
+export { WebDevelopment } from './web-development';
 export { PracticalTraining } from './PracticalTraining';
 export { AI } from './AI';
 export { Programming } from './Programming';
