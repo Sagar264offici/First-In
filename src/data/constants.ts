@@ -21,6 +21,7 @@ export const contactInfo = {
 export const socialLinks = {
   instagram: 'https://instagram.com/vikas_it_institute',
   facebook: 'https://facebook.com/Vikas_it_institute',
+  developer_contact: 'https://sagar-horizon.vercel.app',
 };
 
 export const instituteInfo = {
